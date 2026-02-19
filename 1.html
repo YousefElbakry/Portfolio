@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yousef | Portfolio</title>
+  <meta name="description" content="Yousef — Front-end Developer portfolio" />
+  <link rel="stylesheet" href="2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- You can swap this font or remove it if you want no externals -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="Go to top">
+        <span class="logo-mark">Y</span>ousef
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="btn small">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Front‑End Developer</p>
+          <h1 class="title">I build clean, responsive web experiences.</h1>
+          <p class="subtitle">
+            Third‑year CS student turning ideas into fast, accessible, and maintainable web apps.
+          </p>
+          <div class="actions">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn ghost">Hire Me</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <!-- Simple placeholder illustration using pure CSS -->
+          <div class="device">
+            <div class="screen">
+              <div class="line"></div>
+              <div class="line short"></div>
+              <div class="line"></div>
+              <div class="line short"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div>
+          <h2>About me</h2>
+          <p>
+            I’m Yousef, a developer who loves building polished interfaces and smooth user flows.
+            I focus on clarity, performance, and clean code that’s easy to maintain.
+          </p>
+          <p>
+            I enjoy turning real freelance-style briefs into practical, production‑ready projects.
+            Always learning, always shipping.
+          </p>
+          <div class="badges">
+            <span class="badge">Reliable</span>
+            <span class="badge">Communicative</span>
+            <span class="badge">Detail‑oriented</span>
+          </div>
+        </div>
+        <ul class="list">
+          <li>
+            <strong>Location:</strong> Cairo, Egypt
+          </li>
+          <li>
+            <strong>Availability:</strong> Open to freelance / part‑time
+          </li>
+          <li>
+            <strong>Focus:</strong> Front‑end, UI engineering, CRUD dashboards
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="cards">
+            <article class="card">
+            <h3>Front‑end</h3>
+            <p>HTML, CSS, JavaScript, Responsive UI, Accessibility, Bootstrap</p>
+          </article>
+          <article class="card">
+            <h3>Backend basics</h3>
+            <p>Python, SQLite, REST fundamentals, data modeling</p>
+          </article>
+          <article class="card">
+            <h3>Tools</h3>
+            <p>Git & GitHub, Chrome DevTools, VS Code</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="grid projects-grid">
+          <!-- Project Card 1 -->
+          <article class="project">
+            <div class="project-media">
+              <div class="thumb">
+                <div class="thumb-bar"></div>
+                <div class="thumb-bar short"></div>
+                <div class="thumb-bar"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Admin Dashboard UI</h3>
+              <p>
+                Responsive dashboard with tables, filters, and modals. Built with semantic HTML, modern CSS, and vanilla JS.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="links">
+                <a href="#" class="btn small">Live</a>
+                <a href="#" class="btn ghost small">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project">
+            <div class="project-media">
+              <div class="thumb">
+                <div class="thumb-bar"></div>
+                <div class="thumb-bar short"></div>
+                <div class="thumb-bar"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Quiz App</h3>
+              <p>
+                Interactive quiz with score tracking and instant feedback. Accessible controls and keyboard navigation.
+              </p>
+              <div class="tags">
+                <span>JS</span><span>ARIA</span><span>LocalStorage</span>
+              </div>
+              <div class="links">
+                <a href="#" class="btn small">Live</a>
+                <a href="#" class="btn ghost small">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project">
+            <div class="project-media">
+              <div class="thumb">
+                <div class="thumb-bar"></div>
+                <div class="thumb-bar short"></div>
+                <div class="thumb-bar"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>CRUD Contacts</h3>
+              <p>
+                Front‑end‑only CRUD simulation with table sorting, search, and modal forms. Clean code and modular JS.
+              </p>
+              <div class="tags">
+                <span>JS</span><span>Tables</span><span>UX</span>
+              </div>
+              <div class="links">
+                <a href="#" class="btn small">Live</a>
+                <a href="#" class="btn ghost small">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you have a project or just want to say hi, send me a message.</p>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <small class="error" id="nameError"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+
+          <button type="submit" class="btn">Send</button>
+          <p class="success" id="formSuccess" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year"></span> Yousef. All rights reserved.</p>
+      <div class="social">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+      <a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="3.js"></script>
+</body>
+</html>
