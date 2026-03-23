@@ -179,9 +179,12 @@ p { color: var(--muted); }
   border-radius: 10px;
   background: #0a0d24;
   border: 1px solid #20254e;
-  padding: 16px;
+  padding: 10px;
   display: grid;
   gap: 10px;
+}
+img{
+  border-radius: 5px;
 }
 .screen .line {
   height: 12px;
