@@ -22,6 +22,10 @@
         <span class="logo-mark">Y</span>ousef
       </a>
 
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="true">
+        ☾
+      </button>
+
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -42,7 +46,7 @@
   <!-- Main -->
   <main id="main">
     <!-- Hero Section -->
-    <section class="section hero">
+    <section class="section hero reveal">
       <div class="container hero-grid">
         <div class="hero-text">
           <p class="eyebrow">Front‑End Developer</p>
@@ -100,24 +104,24 @@
     </section>
 
 
-    <section class="section" id="skills">
+    <section class="section" id="education">
       <div class="container">
         <h2>Education</h2>
         <div class="cards">
-            <article class="card">
+            <article class="card reveal">
             <h3>MTI University</h3>
             <p>My academic studies in Computer Science at MTI University
                equipped me with a comprehensive foundation and deep 
                understanding of the field.
             </p>
           </article>
-          <article class="card">
+            <article class="card reveal">
             <h3>DEPI</h3>
             <p>My Front-End training at DEPI equipped me with the skills
                that launched my career in the web industry.
             </p>
           </article>
-          <article class="card">
+            <article class="card reveal">
             <h3>Free Resources</h3>
             <p>Leveraging free learning resources, I expanded my front-end 
               abilities and deepened my understanding of the web industry.</p>
@@ -132,15 +136,15 @@
       <div class="container">
         <h2>Skills</h2>
         <div class="cards">
-            <article class="card">
+            <article class="card reveal">
             <h3>Front‑end</h3>
             <p>HTML, CSS, JavaScript, Responsive UI, Accessibility, Bootstrap</p>
           </article>
-          <article class="card">
+            <article class="card reveal">
             <h3>Backend basics</h3>
             <p>Python, SQLite, REST fundamentals, data modeling</p>
           </article>
-          <article class="card">
+            <article class="card reveal">
             <h3>Tools</h3>
             <p>Git & GitHub, Chrome DevTools, VS Code</p>
           </article>
@@ -148,89 +152,180 @@
       </div>
     </section>
 
-    <!-- Projects -->
-    <section class="section" id="projects">
-      <div class="container">
-        <h2>Projects</h2>
+    <section class="section" id="certificates">
+  <div class="container">
+    <h2>Certificates</h2>
 
-        <div class="grid projects-grid">
-          <!-- Project Card 1 -->
-          <article class="project">
-            <div class="project-media">
-              <div class="thumb">
-                <div class="thumb-bar"></div>
-                <div class="thumb-bar short"></div>
-                <div class="thumb-bar"></div>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Admin Dashboard UI</h3>
-              <p>
-                Responsive dashboard with tables, filters, and modals. Built with semantic HTML, modern CSS, and vanilla JS.
-              </p>
-              <div class="tags">
-                <span>HTML</span><span>CSS</span><span>JavaScript</span>
-              </div>
-              <div class="links">
-                <a href="#" class="btn small">Live</a>
-                <a href="#" class="btn ghost small">Code</a>
-              </div>
-            </div>
-          </article>
+    <!-- Carousel Wrapper -->
+    <div class="projects-carousel" role="region" aria-label="Certificates Carousel">
 
-          <!-- Project Card 2 -->
-          <article class="project">
-            <div class="project-media">
-              <div class="thumb">
-                <div class="thumb-bar"></div>
-                <div class="thumb-bar short"></div>
-                <div class="thumb-bar"></div>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Quiz App</h3>
-              <p>
-                Interactive quiz with score tracking and instant feedback. Accessible controls and keyboard navigation.
-              </p>
-              <div class="tags">
-                <span>JS</span><span>ARIA</span><span>LocalStorage</span>
-              </div>
-              <div class="links">
-                <a href="#" class="btn small">Live</a>
-                <a href="#" class="btn ghost small">Code</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project Card 3 -->
-          <article class="project">
-            <div class="project-media">
-              <div class="thumb">
-                <div class="thumb-bar"></div>
-                <div class="thumb-bar short"></div>
-                <div class="thumb-bar"></div>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>CRUD Contacts</h3>
-              <p>
-                Front‑end‑only CRUD simulation with table sorting, search, and modal forms. Clean code and modular JS.
-              </p>
-              <div class="tags">
-                <span>JS</span><span>Tables</span><span>UX</span>
-              </div>
-              <div class="links">
-                <a href="#" class="btn small">Live</a>
-                <a href="#" class="btn ghost small">Code</a>
-              </div>
-            </div>
-          </article>
+      <!-- Certificate 1 -->
+      <article class="project tilt">
+        <div class="project-media">
+          <img src="Depi.png" alt="DEPI Software Development Certificate" class="thumb-image" loading="lazy">
         </div>
-      </div>
-    </section>
+        <div class="project-body">
+          <h3>Software Development (DEPI)</h3>
+          <p>
+            Professional certification validating core React concepts, including component architecture, state management with Hooks, JSX syntax, and building responsive web applications.
+          </p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Bootstrap</span><span>React</span><span>MongoDB</span>
+          </div>
+          <div class="links">
+            <a href="DEPI.pdf" class="btn small" target="_blank" rel="noopener noreferrer" aria-label="View DEPI Certificate PDF">View Credential</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Certificate 2 -->
+      <article class="project tilt">
+        <div class="project-media">
+          <img src="Nti.png" alt="NTI Network Security Certificate" class="thumb-image" loading="lazy">
+        </div>
+        <div class="project-body">
+          <h3>Network Security (NTI)</h3>
+          <p>
+            Specialized credential from the National Telecommunications Institute (NTI) covering network infrastructure security, threat mitigation, firewall configuration, and vulnerability assessment.
+          </p>
+          <div class="tags">
+            <span>Network Security</span><span>Protocols</span><span>Firewalls</span>
+            <span>Vulnerability Assessment</span><span>Incident Response</span>
+          </div>
+          <div class="links">
+            <a href="NTI.pdf" class="btn small" target="_blank" rel="noopener noreferrer" aria-label="View DEPI Certificate PDF">View Credential</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Certificate 3 -->
+      <article class="project tilt">
+        <div class="project-media">
+          <img src="Sye.png" alt="Business English Certificate" class="thumb-image" loading="lazy">
+        </div>
+        <div class="project-body">
+          <h3>Business English</h3>
+          <p>
+            Professional credential focusing on business communication, corporate email etiquette, cross-cultural workplace negotiation, and formal presentation skills.
+          </p>
+          <div class="tags">
+            <span>Presentation</span><span>Leadership</span><span>Verbal Agility</span>
+            <span>Negotiation</span><span>Workplace Writing</span>
+          </div>
+          <div class="links">
+            <a href="SYE.pdf" class="btn small" target="_blank" rel="noopener noreferrer" aria-label="View DEPI Certificate PDF">View Credential</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Certificate 4 -->
+      <article class="project tilt">
+        <div class="project-media">
+          <img src="Cisco.png" alt="Cisco CyberOps Associate Certificate" class="thumb-image" loading="lazy">
+        </div>
+        <div class="project-body">
+          <h3>Cisco CyberOps Associate</h3>
+          <p>
+            Professional credential from Cisco validating core security operations (SecOps) skills, including security monitoring, incident response, threat detection, and digital forensics.
+          </p>
+          <div class="tags">
+            <span>Security Operations</span><span>Intrusion Analysis</span>
+            <span>Threat Forensics</span><span>Incident Handling</span>
+          </div>
+          <div class="links">
+            <a href="CISCO.pdf" class="btn small" target="_blank" rel="noopener noreferrer" aria-label="View DEPI Certificate PDF">View Credential</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Projects -->
+<!-- Projects Section -->
+<section class="section alt" id="projects">
+  <div class="container">
+    <h2>Featured Projects</h2>
+
+    <!-- Carousel Wrapper -->
+    <div class="projects-carousel" role="region" aria-label="Projects Carousel">
+
+      <!-- Project Card 1 -->
+      <article class="project tilt">
+        <div class="project-media">
+          <img src="p1.jpg" alt="MR. Suit Landing Page Preview" class="thumb-image" loading="lazy">
+        </div>
+        <div class="project-body">
+          <h3>MR. Suit Landing Page</h3>
+          <p>
+            Elegant tailored-suit landing page featuring a responsive grid layout, smooth CSS animations, and optimized cross-browser UI.
+          </p>
+          <div class="tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <div class="links">
+            <a href="https://yousefelbakry.github.io/MR.-suit/" 
+               class="btn small" target="_blank" rel="noopener noreferrer" aria-label="Live Demo for MR. Suit Landing Page">Live Demo</a>
+            <a href="https://github.com/YousefElbakry/MR.-suit" 
+               class="btn ghost small" target="_blank" rel="noopener noreferrer" aria-label="Source Code for MR. Suit Landing Page">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card 2 -->
+      <article class="project tilt">
+        <div class="project-media">
+          <img src="p2.jpg" alt="Pharmacy Landing Page Preview" class="thumb-image" loading="lazy">
+        </div>
+        <div class="project-body">
+          <h3>Pharmacy Landing Page</h3>
+          <p>
+            Modern healthcare interface focused on accessible design, clean UI hierarchy, and clear call-to-action touchpoints for patients.
+          </p>
+          <div class="tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <div class="links">
+            <a href="https://yousefelbakry.github.io/DR_Bassant_Pharmacy/" 
+               class="btn small" target="_blank" rel="noopener noreferrer" aria-label="Live Demo for Pharmacy Landing Page">Live Demo</a>
+            <a href="https://github.com/YousefElbakry/DR_Bassant_Pharmacy" 
+               class="btn ghost small" target="_blank" rel="noopener noreferrer" aria-label="Source Code for Pharmacy Landing Page">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card 3 -->
+      <article class="project tilt">
+        <div class="project-media">
+          <img src="p3.jpg" alt="Medical Diagnosis System Preview" class="thumb-image" loading="lazy">
+        </div>
+        <div class="project-body">
+          <h3>Diagnosis System</h3>
+          <p>
+            Front-end web simulation for medical diagnostics with interactive form validation, dynamic state handling, and modular JS modules.
+          </p>
+          <div class="tags">
+            <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>UX</span>
+          </div>
+          <div class="links">
+            <a href="https://yousefelbakry.github.io/Diagnoses-System/" 
+               class="btn small" target="_blank" rel="noopener noreferrer" aria-label="Live Demo for Diagnosis System">Live Demo</a>
+            <a href="https://github.com/YousefElbakry/Diagnoses-System" 
+               class="btn ghost small" target="_blank" rel="noopener noreferrer" aria-label="Source Code for Diagnosis System">Code</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Contact -->
-    <section class="section alt" id="contact">
+    <section class="section" id="contact">
       <div class="container">
         <h2>Contact</h2>
         <p>If you have a project or just want to say hi, send me a message.</p>
@@ -265,9 +360,8 @@
     <div class="container footer-grid">
       <p>&copy; <span id="year"></span> Yousef. All rights reserved.</p>
       <div class="social">
-        <a href="#" aria-label="GitHub">GitHub</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="https://github.com/YousefElbakry" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/yousef-ayman-frontend/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeKzzngZnR8y120Kh%2BOmj1Q%3D%3D" aria-label="LinkedIn">LinkedIn</a>
       </div>
       <a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
     </div>
